@@ -1,0 +1,86 @@
+
+
+
+
+/* Utils */
+.bg-warn-2{
+  background-color: var(--blue) !important;
+}
+.bg-gold{
+  background-color: var(--yellow) !important;
+}
+.icon-icon{
+  bottom: 30px;
+  right: 30px;
+  opacity: .5;
+  transition: .3s all;
+}
+a:hover{
+  text-decoration: none;
+}
+@media (max-width: 768px){
+  .negative-sm-mr-n3{
+      margin-right: -1rem !important;
+  }
+}
+.card{
+  border: none;
+}
+.card-hover{
+  transition: all .3s;
+}
+.card-hover:hover{
+  box-shadow: 1px 3px 5px #111;
+}
+.card-hover:hover .icon-icon{
+  transform: scale(1.5);
+  opacity: .2;
+}
+.card-footer-hover{
+  cursor: pointer;
+}
+
+/* Utils end*/
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: #dadada !important;
+}
+
+.w-100{
+  width: 100%;
+}
+.sidebar{
+  height: 100vh;
+}
+
+.sidebar-link{
+  transition: .3s all;
+}
+
+.sidebar-link:hover{
+  border-radius: 5px;
+  background-color: #262727;
+  transform: translateY(-2px);
+  box-shadow: 1px 2px 5px #111;
+}
+
+.current{
+  border-radius: 5px;
+  background-color: var(--info);
+  transition: .3s all;
+}
+
+.current:hover{
+  background-color: #0e4b65;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px){
+  .sidebar{
+      position: static;
+      height: auto;
+  }.top-nav{
+      position: static;
+  }
+}

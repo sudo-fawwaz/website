@@ -1,0 +1,129 @@
+<%- include('../main_layouts/admin/adminheader') %> 
+    <!-- Cards -->
+    <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row ml-auto pt-5 mt-4 mb-3 justify-content-center">
+            <!-- Cards -->
+            <div class="col-xl-3 col-lg-6 mb-2 p-1">
+              <div class="card card-hover bg-warning">
+                <div class="card-body">
+                  <i class="fas fa-paper-plane text-dark fa-6x position-absolute icon-icon"></i>
+                  <div class="d-flex justify-content-between flex-column text-white">
+                    <h5 class="h5 font-weight-bold text-white">Jumlah <br> Artikel</h5>
+                    <p class="lead">10</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="javascript:void(0)" class="text-white card-footer-hover">
+                    <i class="fas fa-info-circle mr-2 text-light"></i>
+                    Lihat Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 mb-2 p-1">
+              <div class="card card-hover bg-primary">
+                <div class="card-body">
+                  <i class="fas fa-globe-asia text-dark fa-6x position-absolute icon-icon"></i>
+                  <div class="d-flex justify-content-between flex-column text-white">
+                    <h5 class="h5 font-weight-bold text-white">Jumlah <br> Pengunjung</h5>
+                    <p class="lead">200</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="javascript:void(0)" class="text-white card-footer-hover">
+                    <i class="fas fa-info-circle mr-2 text-light"></i>
+                    Lihat Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 mb-2 p-1">
+              <div class="card card-hover bg-danger">
+                <div class="card-body">
+                  <i class="fas fa-link text-dark fa-6x position-absolute icon-icon"></i>
+                  <div class="d-flex justify-content-between flex-column text-white">
+                    <h5 class="h5 font-weight-bold text-white">Artikel <br> Terbuang</h5>
+                    <p class="lead">200</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="javascript:void(0)" class="text-white card-footer-hover">
+                    <i class="fas fa-info-circle mr-2 text-light"></i>
+                    Lihat Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 mb-2 p-1">
+              <div class="card card-hover bg-info">
+                <div class="card-body">
+                  <i class="fas fa-hand-holding-usd text-dark fa-6x position-absolute icon-icon"></i>
+                  <div class="d-flex justify-content-between flex-column text-white">
+                    <h5 class="h5 font-weight-bold text-white">Taxes & <br> Advertisment </h5>
+                    <p class="lead">$200.000</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="javascript:void(0)" class="text-white card-footer-hover">
+                    <i class="fas fa-info-circle mr-2 text-light"></i>
+                    Lihat Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- End of cards -->
+
+    <!-- Tables -->
+    <section>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 ml-auto">
+            <div class="row">
+                <div class="col-lg-12 col-md-6">
+                <p class="h4 text-muted text-center">Data Artikel</p>
+                <table class="table bg-dark table-striped text-center">
+                    <thead>
+                    <tr class="text-white">
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Kategori</th>
+                        <th>Aksi</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-white">
+                    <tr>
+                        <th>1.</th>
+                        <td>Ushul Tsalastah</td>
+                        <td>Aqidah</td>
+                        <td><a href="javascript:void(0)" class="btn btn-info btn-sm"><i class="fas fa-edit"></i> Manage</a></td>
+                    </tr>
+                    <tr>
+                        <th>2.</th>
+                        <td>Aqidah Thohawiyah</td>
+                        <td>Aqidah</td>
+                        <td><a href="javascript:void(0)" class="btn btn-info btn-sm"><i class="fas fa-edit"></i> Manage</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="javascript:void(0)" class="btn btn-sm btn-info"><i class="fas fa-eye mr-2"></i>Lihat Detail</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End of Tables -->
+<%- include('../main_layouts/admin/adminfooter') %> 
