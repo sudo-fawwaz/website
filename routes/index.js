@@ -27,10 +27,6 @@ router.get('/login', (req, res, next) =>{
 	res.render('admin_pages/login', {title : 'Login'})
 });
 
-// router.get('/admin', (req, res, next) =>{
-// 	res.render('admin_pages/dashboard', {title: "Dashboard", topnav: "Halaman Utama"})
-// })
-
 router.get('/admin',(req, res) => {
 	let sql = "SELECT * FROM article";
 	let query = conn.query(sql, (err, results) => {
@@ -56,9 +52,6 @@ router.post('/admin/save_article',(req, res) => {
 	});
 });
 
-// router.get('/admin/modify', (req, res, next) =>{
-// 	res.render('admin_pages/edit_article', {title: "Edit Article", topnav : "Edit Artikel"})
-// })
 
 router.get('/admin/modify',(req, res) => {
 	let sql = "SELECT * FROM article";
@@ -72,9 +65,6 @@ router.get('/admin/modify',(req, res) => {
 	});
  });
 
-// router.get('/admin/delete', (req, res, next) =>{
-// 	res.render('admin_pages/delete_article', {title: "Delete Article", topnav : "Buang Artikel"})
-// })
 
 router.get('/admin/delete',(req, res) => {
 	let sql = "SELECT * FROM article";
