@@ -27,7 +27,7 @@ router.get('/login', (req, res, next) =>{
 	res.render('admin_pages/login', {title : 'Login'})
 });
 
-router.get('/admin',(req, res) => {
+router.get('/admin',(req, res, next) => {
 	let sql = "SELECT * FROM article";
 	let query = conn.query(sql, (err, results) => {
 	  if(err) throw err;
@@ -53,7 +53,7 @@ router.post('/admin/save_article',(req, res) => {
 });
 
 
-router.get('/admin/modify',(req, res) => {
+router.get('/admin/modify',(req, res, next) => {
 	let sql = "SELECT * FROM article";
 	let query = conn.query(sql, (err, results) => {
 	  if(err) throw err;
@@ -66,7 +66,7 @@ router.get('/admin/modify',(req, res) => {
  });
 
 
-router.get('/admin/delete',(req, res) => {
+router.get('/admin/delete',(req, res, next) => {
 	let sql = "SELECT * FROM article";
 	let query = conn.query(sql, (err, results) => {
 	  if(err) throw err;
